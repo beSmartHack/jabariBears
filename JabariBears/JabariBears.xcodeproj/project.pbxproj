@@ -15,6 +15,7 @@
 		83B5185625311F6B006A907E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83B5185425311F6B006A907E /* LaunchScreen.storyboard */; };
 		83B5186125311F6C006A907E /* JabariBearsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B5186025311F6C006A907E /* JabariBearsTests.swift */; };
 		83B5186C25311F6C006A907E /* JabariBearsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B5186B25311F6C006A907E /* JabariBearsUITests.swift */; };
+		83B51883253122EE006A907E /* SpeechRecognition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B51882253122EE006A907E /* SpeechRecognition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		83B5186725311F6C006A907E /* JabariBearsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JabariBearsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		83B5186B25311F6C006A907E /* JabariBearsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JabariBearsUITests.swift; sourceTree = "<group>"; };
 		83B5186D25311F6C006A907E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83B51882253122EE006A907E /* SpeechRecognition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +101,12 @@
 		83B5184825311F65006A907E /* JabariBears */ = {
 			isa = PBXGroup;
 			children = (
+				83B51881253122AC006A907E /* Models */,
+				83B5187D25312106006A907E /* Storyboards */,
+				83B5187C253120ED006A907E /* View Controllers */,
 				83B5184925311F65006A907E /* AppDelegate.swift */,
 				83B5184B25311F65006A907E /* SceneDelegate.swift */,
-				83B5184D25311F65006A907E /* ViewController.swift */,
-				83B5184F25311F65006A907E /* Main.storyboard */,
 				83B5185225311F6B006A907E /* Assets.xcassets */,
-				83B5185425311F6B006A907E /* LaunchScreen.storyboard */,
 				83B5185725311F6B006A907E /* Info.plist */,
 			);
 			path = JabariBears;
@@ -126,6 +128,31 @@
 				83B5186D25311F6C006A907E /* Info.plist */,
 			);
 			path = JabariBearsUITests;
+			sourceTree = "<group>";
+		};
+		83B5187C253120ED006A907E /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				83B5184D25311F65006A907E /* ViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		83B5187D25312106006A907E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				83B5185425311F6B006A907E /* LaunchScreen.storyboard */,
+				83B5184F25311F65006A907E /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		83B51881253122AC006A907E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				83B51882253122EE006A907E /* SpeechRecognition.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +288,7 @@
 				83B5184E25311F65006A907E /* ViewController.swift in Sources */,
 				83B5184A25311F65006A907E /* AppDelegate.swift in Sources */,
 				83B5184C25311F65006A907E /* SceneDelegate.swift in Sources */,
+				83B51883253122EE006A907E /* SpeechRecognition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
