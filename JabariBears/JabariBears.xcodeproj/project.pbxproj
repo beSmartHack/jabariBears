@@ -15,7 +15,7 @@
 		83B5185625311F6B006A907E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83B5185425311F6B006A907E /* LaunchScreen.storyboard */; };
 		83B5186125311F6C006A907E /* JabariBearsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B5186025311F6C006A907E /* JabariBearsTests.swift */; };
 		83B5186C25311F6C006A907E /* JabariBearsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B5186B25311F6C006A907E /* JabariBearsUITests.swift */; };
-		83B51883253122EE006A907E /* SpeechRecognition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B51882253122EE006A907E /* SpeechRecognition.swift */; };
+		83B5188925312849006A907E /* SpeechOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B5188825312849006A907E /* SpeechOutput.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +50,7 @@
 		83B5186725311F6C006A907E /* JabariBearsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JabariBearsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		83B5186B25311F6C006A907E /* JabariBearsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JabariBearsUITests.swift; sourceTree = "<group>"; };
 		83B5186D25311F6C006A907E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		83B51882253122EE006A907E /* SpeechRecognition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognition.swift; sourceTree = "<group>"; };
+		83B5188825312849006A907E /* SpeechOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechOutput.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,7 +150,7 @@
 		83B51881253122AC006A907E /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				83B51882253122EE006A907E /* SpeechRecognition.swift */,
+				83B5188825312849006A907E /* SpeechOutput.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -285,10 +285,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83B5188925312849006A907E /* SpeechOutput.swift in Sources */,
 				83B5184E25311F65006A907E /* ViewController.swift in Sources */,
 				83B5184A25311F65006A907E /* AppDelegate.swift in Sources */,
 				83B5184C25311F65006A907E /* SceneDelegate.swift in Sources */,
-				83B51883253122EE006A907E /* SpeechRecognition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
