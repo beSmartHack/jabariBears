@@ -7,62 +7,66 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		83B517BD253119D2006A907E /* JabariBearsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B517BC253119D2006A907E /* JabariBearsApp.swift */; };
-		83B517BF253119D2006A907E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B517BE253119D2006A907E /* ContentView.swift */; };
-		83B517C1253119D7006A907E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83B517C0253119D7006A907E /* Assets.xcassets */; };
-		83B517C4253119D7006A907E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83B517C3253119D7006A907E /* Preview Assets.xcassets */; };
-		83B517CF253119D8006A907E /* JabariBearsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B517CE253119D8006A907E /* JabariBearsTests.swift */; };
-		83B517DA253119D8006A907E /* JabariBearsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B517D9253119D8006A907E /* JabariBearsUITests.swift */; };
+		83B5184A25311F65006A907E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B5184925311F65006A907E /* AppDelegate.swift */; };
+		83B5184C25311F65006A907E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B5184B25311F65006A907E /* SceneDelegate.swift */; };
+		83B5184E25311F65006A907E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B5184D25311F65006A907E /* ViewController.swift */; };
+		83B5185125311F65006A907E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83B5184F25311F65006A907E /* Main.storyboard */; };
+		83B5185325311F6B006A907E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83B5185225311F6B006A907E /* Assets.xcassets */; };
+		83B5185625311F6B006A907E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83B5185425311F6B006A907E /* LaunchScreen.storyboard */; };
+		83B5186125311F6C006A907E /* JabariBearsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B5186025311F6C006A907E /* JabariBearsTests.swift */; };
+		83B5186C25311F6C006A907E /* JabariBearsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B5186B25311F6C006A907E /* JabariBearsUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		83B517CB253119D8006A907E /* PBXContainerItemProxy */ = {
+		83B5185D25311F6C006A907E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 83B517B1253119D2006A907E /* Project object */;
+			containerPortal = 83B5183E25311F65006A907E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 83B517B8253119D2006A907E;
+			remoteGlobalIDString = 83B5184525311F65006A907E;
 			remoteInfo = JabariBears;
 		};
-		83B517D6253119D8006A907E /* PBXContainerItemProxy */ = {
+		83B5186825311F6C006A907E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 83B517B1253119D2006A907E /* Project object */;
+			containerPortal = 83B5183E25311F65006A907E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 83B517B8253119D2006A907E;
+			remoteGlobalIDString = 83B5184525311F65006A907E;
 			remoteInfo = JabariBears;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		83B517B9253119D2006A907E /* JabariBears.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JabariBears.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		83B517BC253119D2006A907E /* JabariBearsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JabariBearsApp.swift; sourceTree = "<group>"; };
-		83B517BE253119D2006A907E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		83B517C0253119D7006A907E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		83B517C3253119D7006A907E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		83B517C5253119D7006A907E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		83B517CA253119D8006A907E /* JabariBearsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JabariBearsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		83B517CE253119D8006A907E /* JabariBearsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JabariBearsTests.swift; sourceTree = "<group>"; };
-		83B517D0253119D8006A907E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		83B517D5253119D8006A907E /* JabariBearsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JabariBearsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		83B517D9253119D8006A907E /* JabariBearsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JabariBearsUITests.swift; sourceTree = "<group>"; };
-		83B517DB253119D8006A907E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83B5184625311F65006A907E /* JabariBears.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JabariBears.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		83B5184925311F65006A907E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		83B5184B25311F65006A907E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		83B5184D25311F65006A907E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		83B5185025311F65006A907E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		83B5185225311F6B006A907E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		83B5185525311F6B006A907E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		83B5185725311F6B006A907E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83B5185C25311F6C006A907E /* JabariBearsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JabariBearsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		83B5186025311F6C006A907E /* JabariBearsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JabariBearsTests.swift; sourceTree = "<group>"; };
+		83B5186225311F6C006A907E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83B5186725311F6C006A907E /* JabariBearsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JabariBearsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		83B5186B25311F6C006A907E /* JabariBearsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JabariBearsUITests.swift; sourceTree = "<group>"; };
+		83B5186D25311F6C006A907E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		83B517B6253119D2006A907E /* Frameworks */ = {
+		83B5184325311F65006A907E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		83B517C7253119D8006A907E /* Frameworks */ = {
+		83B5185925311F6C006A907E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		83B517D2253119D8006A907E /* Frameworks */ = {
+		83B5186425311F6C006A907E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -72,60 +76,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		83B517B0253119D2006A907E = {
+		83B5183D25311F65006A907E = {
 			isa = PBXGroup;
 			children = (
-				83B517BB253119D2006A907E /* JabariBears */,
-				83B517CD253119D8006A907E /* JabariBearsTests */,
-				83B517D8253119D8006A907E /* JabariBearsUITests */,
-				83B517BA253119D2006A907E /* Products */,
+				83B5184825311F65006A907E /* JabariBears */,
+				83B5185F25311F6C006A907E /* JabariBearsTests */,
+				83B5186A25311F6C006A907E /* JabariBearsUITests */,
+				83B5184725311F65006A907E /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		83B517BA253119D2006A907E /* Products */ = {
+		83B5184725311F65006A907E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				83B517B9253119D2006A907E /* JabariBears.app */,
-				83B517CA253119D8006A907E /* JabariBearsTests.xctest */,
-				83B517D5253119D8006A907E /* JabariBearsUITests.xctest */,
+				83B5184625311F65006A907E /* JabariBears.app */,
+				83B5185C25311F6C006A907E /* JabariBearsTests.xctest */,
+				83B5186725311F6C006A907E /* JabariBearsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		83B517BB253119D2006A907E /* JabariBears */ = {
+		83B5184825311F65006A907E /* JabariBears */ = {
 			isa = PBXGroup;
 			children = (
-				83B517BC253119D2006A907E /* JabariBearsApp.swift */,
-				83B517BE253119D2006A907E /* ContentView.swift */,
-				83B517C0253119D7006A907E /* Assets.xcassets */,
-				83B517C5253119D7006A907E /* Info.plist */,
-				83B517C2253119D7006A907E /* Preview Content */,
+				83B5184925311F65006A907E /* AppDelegate.swift */,
+				83B5184B25311F65006A907E /* SceneDelegate.swift */,
+				83B5184D25311F65006A907E /* ViewController.swift */,
+				83B5184F25311F65006A907E /* Main.storyboard */,
+				83B5185225311F6B006A907E /* Assets.xcassets */,
+				83B5185425311F6B006A907E /* LaunchScreen.storyboard */,
+				83B5185725311F6B006A907E /* Info.plist */,
 			);
 			path = JabariBears;
 			sourceTree = "<group>";
 		};
-		83B517C2253119D7006A907E /* Preview Content */ = {
+		83B5185F25311F6C006A907E /* JabariBearsTests */ = {
 			isa = PBXGroup;
 			children = (
-				83B517C3253119D7006A907E /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		83B517CD253119D8006A907E /* JabariBearsTests */ = {
-			isa = PBXGroup;
-			children = (
-				83B517CE253119D8006A907E /* JabariBearsTests.swift */,
-				83B517D0253119D8006A907E /* Info.plist */,
+				83B5186025311F6C006A907E /* JabariBearsTests.swift */,
+				83B5186225311F6C006A907E /* Info.plist */,
 			);
 			path = JabariBearsTests;
 			sourceTree = "<group>";
 		};
-		83B517D8253119D8006A907E /* JabariBearsUITests */ = {
+		83B5186A25311F6C006A907E /* JabariBearsUITests */ = {
 			isa = PBXGroup;
 			children = (
-				83B517D9253119D8006A907E /* JabariBearsUITests.swift */,
-				83B517DB253119D8006A907E /* Info.plist */,
+				83B5186B25311F6C006A907E /* JabariBearsUITests.swift */,
+				83B5186D25311F6C006A907E /* Info.plist */,
 			);
 			path = JabariBearsUITests;
 			sourceTree = "<group>";
@@ -133,13 +131,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		83B517B8253119D2006A907E /* JabariBears */ = {
+		83B5184525311F65006A907E /* JabariBears */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 83B517DE253119D8006A907E /* Build configuration list for PBXNativeTarget "JabariBears" */;
+			buildConfigurationList = 83B5187025311F6C006A907E /* Build configuration list for PBXNativeTarget "JabariBears" */;
 			buildPhases = (
-				83B517B5253119D2006A907E /* Sources */,
-				83B517B6253119D2006A907E /* Frameworks */,
-				83B517B7253119D2006A907E /* Resources */,
+				83B5184225311F65006A907E /* Sources */,
+				83B5184325311F65006A907E /* Frameworks */,
+				83B5184425311F65006A907E /* Resources */,
 			);
 			buildRules = (
 			);
@@ -147,68 +145,68 @@
 			);
 			name = JabariBears;
 			productName = JabariBears;
-			productReference = 83B517B9253119D2006A907E /* JabariBears.app */;
+			productReference = 83B5184625311F65006A907E /* JabariBears.app */;
 			productType = "com.apple.product-type.application";
 		};
-		83B517C9253119D8006A907E /* JabariBearsTests */ = {
+		83B5185B25311F6C006A907E /* JabariBearsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 83B517E1253119D8006A907E /* Build configuration list for PBXNativeTarget "JabariBearsTests" */;
+			buildConfigurationList = 83B5187325311F6C006A907E /* Build configuration list for PBXNativeTarget "JabariBearsTests" */;
 			buildPhases = (
-				83B517C6253119D8006A907E /* Sources */,
-				83B517C7253119D8006A907E /* Frameworks */,
-				83B517C8253119D8006A907E /* Resources */,
+				83B5185825311F6C006A907E /* Sources */,
+				83B5185925311F6C006A907E /* Frameworks */,
+				83B5185A25311F6C006A907E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				83B517CC253119D8006A907E /* PBXTargetDependency */,
+				83B5185E25311F6C006A907E /* PBXTargetDependency */,
 			);
 			name = JabariBearsTests;
 			productName = JabariBearsTests;
-			productReference = 83B517CA253119D8006A907E /* JabariBearsTests.xctest */;
+			productReference = 83B5185C25311F6C006A907E /* JabariBearsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		83B517D4253119D8006A907E /* JabariBearsUITests */ = {
+		83B5186625311F6C006A907E /* JabariBearsUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 83B517E4253119D8006A907E /* Build configuration list for PBXNativeTarget "JabariBearsUITests" */;
+			buildConfigurationList = 83B5187625311F6C006A907E /* Build configuration list for PBXNativeTarget "JabariBearsUITests" */;
 			buildPhases = (
-				83B517D1253119D8006A907E /* Sources */,
-				83B517D2253119D8006A907E /* Frameworks */,
-				83B517D3253119D8006A907E /* Resources */,
+				83B5186325311F6C006A907E /* Sources */,
+				83B5186425311F6C006A907E /* Frameworks */,
+				83B5186525311F6C006A907E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				83B517D7253119D8006A907E /* PBXTargetDependency */,
+				83B5186925311F6C006A907E /* PBXTargetDependency */,
 			);
 			name = JabariBearsUITests;
 			productName = JabariBearsUITests;
-			productReference = 83B517D5253119D8006A907E /* JabariBearsUITests.xctest */;
+			productReference = 83B5186725311F6C006A907E /* JabariBearsUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		83B517B1253119D2006A907E /* Project object */ = {
+		83B5183E25311F65006A907E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1200;
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
-					83B517B8253119D2006A907E = {
+					83B5184525311F65006A907E = {
 						CreatedOnToolsVersion = 12.0;
 					};
-					83B517C9253119D8006A907E = {
+					83B5185B25311F6C006A907E = {
 						CreatedOnToolsVersion = 12.0;
-						TestTargetID = 83B517B8253119D2006A907E;
+						TestTargetID = 83B5184525311F65006A907E;
 					};
-					83B517D4253119D8006A907E = {
+					83B5186625311F6C006A907E = {
 						CreatedOnToolsVersion = 12.0;
-						TestTargetID = 83B517B8253119D2006A907E;
+						TestTargetID = 83B5184525311F65006A907E;
 					};
 				};
 			};
-			buildConfigurationList = 83B517B4253119D2006A907E /* Build configuration list for PBXProject "JabariBears" */;
+			buildConfigurationList = 83B5184125311F65006A907E /* Build configuration list for PBXProject "JabariBears" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -216,36 +214,37 @@
 				en,
 				Base,
 			);
-			mainGroup = 83B517B0253119D2006A907E;
-			productRefGroup = 83B517BA253119D2006A907E /* Products */;
+			mainGroup = 83B5183D25311F65006A907E;
+			productRefGroup = 83B5184725311F65006A907E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				83B517B8253119D2006A907E /* JabariBears */,
-				83B517C9253119D8006A907E /* JabariBearsTests */,
-				83B517D4253119D8006A907E /* JabariBearsUITests */,
+				83B5184525311F65006A907E /* JabariBears */,
+				83B5185B25311F6C006A907E /* JabariBearsTests */,
+				83B5186625311F6C006A907E /* JabariBearsUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		83B517B7253119D2006A907E /* Resources */ = {
+		83B5184425311F65006A907E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83B517C4253119D7006A907E /* Preview Assets.xcassets in Resources */,
-				83B517C1253119D7006A907E /* Assets.xcassets in Resources */,
+				83B5185625311F6B006A907E /* LaunchScreen.storyboard in Resources */,
+				83B5185325311F6B006A907E /* Assets.xcassets in Resources */,
+				83B5185125311F65006A907E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		83B517C8253119D8006A907E /* Resources */ = {
+		83B5185A25311F6C006A907E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		83B517D3253119D8006A907E /* Resources */ = {
+		83B5186525311F6C006A907E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -255,48 +254,68 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		83B517B5253119D2006A907E /* Sources */ = {
+		83B5184225311F65006A907E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83B517BF253119D2006A907E /* ContentView.swift in Sources */,
-				83B517BD253119D2006A907E /* JabariBearsApp.swift in Sources */,
+				83B5184E25311F65006A907E /* ViewController.swift in Sources */,
+				83B5184A25311F65006A907E /* AppDelegate.swift in Sources */,
+				83B5184C25311F65006A907E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		83B517C6253119D8006A907E /* Sources */ = {
+		83B5185825311F6C006A907E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83B517CF253119D8006A907E /* JabariBearsTests.swift in Sources */,
+				83B5186125311F6C006A907E /* JabariBearsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		83B517D1253119D8006A907E /* Sources */ = {
+		83B5186325311F6C006A907E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83B517DA253119D8006A907E /* JabariBearsUITests.swift in Sources */,
+				83B5186C25311F6C006A907E /* JabariBearsUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		83B517CC253119D8006A907E /* PBXTargetDependency */ = {
+		83B5185E25311F6C006A907E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 83B517B8253119D2006A907E /* JabariBears */;
-			targetProxy = 83B517CB253119D8006A907E /* PBXContainerItemProxy */;
+			target = 83B5184525311F65006A907E /* JabariBears */;
+			targetProxy = 83B5185D25311F6C006A907E /* PBXContainerItemProxy */;
 		};
-		83B517D7253119D8006A907E /* PBXTargetDependency */ = {
+		83B5186925311F6C006A907E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 83B517B8253119D2006A907E /* JabariBears */;
-			targetProxy = 83B517D6253119D8006A907E /* PBXContainerItemProxy */;
+			target = 83B5184525311F65006A907E /* JabariBears */;
+			targetProxy = 83B5186825311F6C006A907E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		83B5184F25311F65006A907E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83B5185025311F65006A907E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		83B5185425311F6B006A907E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83B5185525311F6B006A907E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
-		83B517DC253119D8006A907E /* Debug */ = {
+		83B5186E25311F6C006A907E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -357,7 +376,7 @@
 			};
 			name = Debug;
 		};
-		83B517DD253119D8006A907E /* Release */ = {
+		83B5186F25311F6C006A907E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -412,17 +431,14 @@
 			};
 			name = Release;
 		};
-		83B517DF253119D8006A907E /* Debug */ = {
+		83B5187125311F6C006A907E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"JabariBears/Preview Content\"";
 				DEVELOPMENT_TEAM = 7DF23RMRWS;
-				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = JabariBears/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -434,17 +450,14 @@
 			};
 			name = Debug;
 		};
-		83B517E0253119D8006A907E /* Release */ = {
+		83B5187225311F6C006A907E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"JabariBears/Preview Content\"";
 				DEVELOPMENT_TEAM = 7DF23RMRWS;
-				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = JabariBears/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -456,7 +469,7 @@
 			};
 			name = Release;
 		};
-		83B517E2253119D8006A907E /* Debug */ = {
+		83B5187425311F6C006A907E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -478,7 +491,7 @@
 			};
 			name = Debug;
 		};
-		83B517E3253119D8006A907E /* Release */ = {
+		83B5187525311F6C006A907E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -500,7 +513,7 @@
 			};
 			name = Release;
 		};
-		83B517E5253119D8006A907E /* Debug */ = {
+		83B5187725311F6C006A907E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -520,7 +533,7 @@
 			};
 			name = Debug;
 		};
-		83B517E6253119D8006A907E /* Release */ = {
+		83B5187825311F6C006A907E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -543,43 +556,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		83B517B4253119D2006A907E /* Build configuration list for PBXProject "JabariBears" */ = {
+		83B5184125311F65006A907E /* Build configuration list for PBXProject "JabariBears" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				83B517DC253119D8006A907E /* Debug */,
-				83B517DD253119D8006A907E /* Release */,
+				83B5186E25311F6C006A907E /* Debug */,
+				83B5186F25311F6C006A907E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83B517DE253119D8006A907E /* Build configuration list for PBXNativeTarget "JabariBears" */ = {
+		83B5187025311F6C006A907E /* Build configuration list for PBXNativeTarget "JabariBears" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				83B517DF253119D8006A907E /* Debug */,
-				83B517E0253119D8006A907E /* Release */,
+				83B5187125311F6C006A907E /* Debug */,
+				83B5187225311F6C006A907E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83B517E1253119D8006A907E /* Build configuration list for PBXNativeTarget "JabariBearsTests" */ = {
+		83B5187325311F6C006A907E /* Build configuration list for PBXNativeTarget "JabariBearsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				83B517E2253119D8006A907E /* Debug */,
-				83B517E3253119D8006A907E /* Release */,
+				83B5187425311F6C006A907E /* Debug */,
+				83B5187525311F6C006A907E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83B517E4253119D8006A907E /* Build configuration list for PBXNativeTarget "JabariBearsUITests" */ = {
+		83B5187625311F6C006A907E /* Build configuration list for PBXNativeTarget "JabariBearsUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				83B517E5253119D8006A907E /* Debug */,
-				83B517E6253119D8006A907E /* Release */,
+				83B5187725311F6C006A907E /* Debug */,
+				83B5187825311F6C006A907E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 83B517B1253119D2006A907E /* Project object */;
+	rootObject = 83B5183E25311F65006A907E /* Project object */;
 }
