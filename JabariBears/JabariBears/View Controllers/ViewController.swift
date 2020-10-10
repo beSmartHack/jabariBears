@@ -6,11 +6,14 @@
 //
 
 import UIKit
+import AVFoundation
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, AVSpeechSynthesizerDelegate {
     
-    let inSpeech = SpeechInput()
     let speechRecognition = SpeechOutput()
+    let synthesizer = AVSpeechSynthesizer()
+    var machineText = String()
+    var humanText = String()
     
     @IBOutlet weak var searchLabel: UILabel!
     @IBOutlet weak var searchTextInput: UITextField!
@@ -33,11 +36,22 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        let introText = "Welcome there, do you want the smart assistant feature on or off?"
-        speechRecognition.say(text: introText)
-        print("meeeee")
+        machineText = "Welcome there, do you want the smart assistant feature on or off?"
     }
+    
+    func appStart(){
+        
+    }
+    
+    func say(text: String){
+        let utterance = AVSpeechUtterance(string: text)
+        utterance.voice = AVSpeechSynthesisVoice(language: "en-ZA")
+        utterance.rate = 0.545
 
+        synthesizer.speak(utterance)
+    }
+    
+    
     
     @IBAction func onSearchSubmit(_ sender: Any) {
         self.performSegue(withIdentifier: "cityDetails", sender: self)
@@ -45,7 +59,7 @@ class ViewController: UIViewController {
     
 
     @IBAction func didTapScreen(_ sender: Any) {
-        self.inSpeech.recordButtonTapped()
+        
     }
     
 }
