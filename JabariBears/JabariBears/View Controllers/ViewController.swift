@@ -11,7 +11,8 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var searchLabel: UILabel!
     @IBOutlet weak var searchTextInput: UITextField!
-    @IBOutlet weak var searchSubmitButton: UIButton!
+    @IBAction func onSearchSubmit(_ sender: Any) {
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

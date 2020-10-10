@@ -34,6 +34,9 @@
                                 <rect key="frame" x="299" y="431" width="46" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Enter"/>
+                                <connections>
+                                    <action selector="onSearchSubmit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Sy-BA-9pl"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -49,10 +52,10 @@
             </objects>
             <point key="canvasLocation" x="34.782608695652179" y="93.75"/>
         </scene>
-        <!--View Controller-->
+        <!--City View Controller-->
         <scene sceneID="oNQ-Tg-cEN">
             <objects>
-                <viewController id="c82-3Q-wuc" sceneMemberID="viewController">
+                <viewController id="c82-3Q-wuc" customClass="CityViewController" customModule="JabariBears" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4by-3Z-rdf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -79,16 +82,25 @@
                                 <rect key="frame" x="47" y="455" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Go"/>
+                                <connections>
+                                    <action selector="goToActivites:" destination="c82-3Q-wuc" eventType="touchUpInside" id="biP-4K-gZs"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yXl-pO-vMb">
                                 <rect key="frame" x="47" y="528" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Go"/>
+                                <connections>
+                                    <action selector="goToHotels:" destination="c82-3Q-wuc" eventType="touchUpInside" id="lQb-d0-0v9"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Lk-Ky-NZB">
                                 <rect key="frame" x="47" y="611" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Go"/>
+                                <connections>
+                                    <action selector="goToFlights:" destination="c82-3Q-wuc" eventType="touchUpInside" id="Byl-42-Ism"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="We can find you the best COVID friendly deals" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yma-0m-Di3">
                                 <rect key="frame" x="32" y="384" width="350" height="21"/>
@@ -122,6 +134,11 @@
                         <viewLayoutGuide key="safeArea" id="Vhk-gy-HKP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="cityDescription" destination="h6B-fA-d6h" id="2mm-QG-P9D"/>
+                        <outlet property="cityImage" destination="kJi-IE-LA3" id="3Nf-Vp-TOW"/>
+                        <outlet property="cityName" destination="cJz-db-yC9" id="k2S-5h-Mfx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="crK-F9-xfN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
