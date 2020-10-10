@@ -51,7 +51,7 @@ class ViewController: UIViewController, AVSpeechSynthesizerDelegate, SFSpeechRec
         synthesizer.delegate = self
         
         print("luck")
-        //appStart()
+        appStart()
     }
     
     override public func viewDidAppear(_ animated: Bool) {
@@ -143,6 +143,8 @@ class ViewController: UIViewController, AVSpeechSynthesizerDelegate, SFSpeechRec
     func recordButtonTapped() {
         if audioEngine.isRunning {
             audioEngine.stop()
+            print(humanText + "!!!!!")
+            preProcess(text: humanText)
             recognitionRequest?.endAudio()
         } else {
             do {
@@ -173,8 +175,15 @@ class ViewController: UIViewController, AVSpeechSynthesizerDelegate, SFSpeechRec
     }
     
     func preProcess(text: String){
-        city = self.city_data[text]!
-        self.performSegue(withIdentifier: "cityDetails", sender: self)
+        if (text.lowercased().contains("off")) {
+            isSmart = false
+        } else if (text.lowercased().contains("on")){
+            say(text: "What city would you lke to go to?")
+        } else if (self.city_data[text] != nil) {
+            city = self.city_data[text]!
+            self.performSegue(withIdentifier: "cityDetails", sender: self)
+        }
+        humanText = ""
     }
     
     @IBAction func onSearchSubmit(_ sender: Any) {
@@ -190,8 +199,9 @@ class ViewController: UIViewController, AVSpeechSynthesizerDelegate, SFSpeechRec
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
-        var cityViewController = segue.destination as! CityViewController
-        
+        let cityViewController = segue.destination as! CityViewController
+        cityViewController.cityData = city
+        cityViewController.isSmart = isSmart
     }
     
 }

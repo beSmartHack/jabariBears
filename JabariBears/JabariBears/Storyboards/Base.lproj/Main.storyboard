@@ -49,6 +49,7 @@
                     <connections>
                         <outlet property="searchLabel" destination="84A-Vf-kcY" id="yip-8z-uAY"/>
                         <outlet property="searchTextInput" destination="5gD-uF-SKE" id="YgM-S4-9w5"/>
+                        <segue destination="c82-3Q-wuc" kind="presentation" identifier="cityDetails" modalPresentationStyle="fullScreen" id="Xp9-Am-7wB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
