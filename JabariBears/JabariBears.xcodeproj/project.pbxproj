@@ -11,6 +11,7 @@
 		56DEB25D2531585200D2F3FA /* HotelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DEB25C2531585200D2F3FA /* HotelViewController.swift */; };
 		56DEB2622531599200D2F3FA /* HotelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DEB2612531599200D2F3FA /* HotelTableViewCell.swift */; };
 		745C26558CAADABD277E47F7 /* Pods_JabariBears_JabariBearsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A37EE0A04429F0C685B270C5 /* Pods_JabariBears_JabariBearsUITests.framework */; };
+		8311677125321BC700BD4757 /* csvjson.json in Resources */ = {isa = PBXBuildFile; fileRef = 8311677025321BC700BD4757 /* csvjson.json */; };
 		831EF664253181940096A8D7 /* SpeechOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831EF663253181940096A8D7 /* SpeechOutput.swift */; };
 		83B5184A25311F65006A907E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B5184925311F65006A907E /* AppDelegate.swift */; };
 		83B5184C25311F65006A907E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B5184B25311F65006A907E /* SceneDelegate.swift */; };
@@ -50,6 +51,7 @@
 		56DEB25C2531585200D2F3FA /* HotelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelViewController.swift; sourceTree = "<group>"; };
 		56DEB2612531599200D2F3FA /* HotelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelTableViewCell.swift; sourceTree = "<group>"; };
 		5F5AC482FC7C51C86C2E9C01 /* Pods-JabariBearsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JabariBearsTests.debug.xcconfig"; path = "Target Support Files/Pods-JabariBearsTests/Pods-JabariBearsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8311677025321BC700BD4757 /* csvjson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = csvjson.json; sourceTree = "<group>"; };
 		831EF663253181940096A8D7 /* SpeechOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechOutput.swift; sourceTree = "<group>"; };
 		83B5184625311F65006A907E /* JabariBears.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JabariBears.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83B5184925311F65006A907E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 			children = (
 				831EF663253181940096A8D7 /* SpeechOutput.swift */,
 				83B5189B25312E18006A907E /* SpeechInput.swift */,
+				8311677025321BC700BD4757 /* csvjson.json */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 			files = (
 				83B5185625311F6B006A907E /* LaunchScreen.storyboard in Resources */,
 				83B5185325311F6B006A907E /* Assets.xcassets in Resources */,
+				8311677125321BC700BD4757 /* csvjson.json in Resources */,
 				83B5185125311F65006A907E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

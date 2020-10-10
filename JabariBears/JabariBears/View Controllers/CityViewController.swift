@@ -128,7 +128,7 @@ class CityViewController: UIViewController, SFSpeechRecognizerDelegate, AVSpeech
             if audioEngine.isRunning {
                 audioEngine.stop()
                 print(humanText + "!!!!!")
-                
+                preProcess(text: humanText)
                 recognitionRequest?.endAudio()
             } else {
                 do {
