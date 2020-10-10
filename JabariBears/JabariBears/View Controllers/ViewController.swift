@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         speechRecognition.say(text: introText)
         
         let inSpeech = SpeechInput()
-        inSpeech.Begin()
+        inSpeech.recordButtonTapped()
         
     }
 

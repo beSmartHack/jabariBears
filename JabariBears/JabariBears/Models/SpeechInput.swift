@@ -11,17 +11,24 @@ import Speech
 class SpeechInput: UIViewController, SFSpeechRecognizerDelegate  {
     
     private let speechRecognizer = SFSpeechRecognizer(locale: Locale(identifier: "en-US"))!
+    
     private var recognitionRequest: SFSpeechAudioBufferRecognitionRequest?
+    
     private var recognitionTask: SFSpeechRecognitionTask?
+    
     private let audioEngine = AVAudioEngine()
     
-    // Disable the record buttons until authorization has been granted.
-    var isReocrd = false;
+    @IBOutlet var textView: UITextView!
+    
+    @IBOutlet var recordButton: UIButton!
+    
     // MARK: View Controller Lifecycle
     
     public override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Disable the record buttons until authorization has been granted.
+        recordButton.isEnabled = false
     }
     
     override public func viewDidAppear(_ animated: Bool) {
@@ -29,25 +36,31 @@ class SpeechInput: UIViewController, SFSpeechRecognizerDelegate  {
         // Configure the SFSpeechRecognizer object already
         // stored in a local member variable.
         speechRecognizer.delegate = self
+        
         // Asynchronously make the authorization request.
         SFSpeechRecognizer.requestAuthorization { authStatus in
+
             // Divert to the app's main thread so that the UI
             // can be updated.
             OperationQueue.main.addOperation {
                 switch authStatus {
                 case .authorized:
-                    self.isReocrd = true
+                    self.recordButton.isEnabled = true
+                    
                 case .denied:
-                    self.isReocrd = false
-                    print("authorization denied")
+                    self.recordButton.isEnabled = false
+                    self.recordButton.setTitle("User denied access to speech recognition", for: .disabled)
+                    
                 case .restricted:
-                    self.isReocrd = false
-                    print("authorization restricted")
+                    self.recordButton.isEnabled = false
+                    self.recordButton.setTitle("Speech recognition restricted on this device", for: .disabled)
+                    
                 case .notDetermined:
-                    self.isReocrd = false
-                    print("authorization not determined")
+                    self.recordButton.isEnabled = false
+                    self.recordButton.setTitle("Speech recognition not yet authorized", for: .disabled)
+                    
                 default:
-                    self.isReocrd = false
+                    self.recordButton.isEnabled = false
                 }
             }
         }
@@ -82,6 +95,7 @@ class SpeechInput: UIViewController, SFSpeechRecognizerDelegate  {
             
             if let result = result {
                 // Update the text view with the results.
+                //self.textView.text = result.bestTranscription.formattedString
                 isFinal = result.isFinal
                 print("Text \(result.bestTranscription.formattedString)")
             }
@@ -94,7 +108,8 @@ class SpeechInput: UIViewController, SFSpeechRecognizerDelegate  {
                 self.recognitionRequest = nil
                 self.recognitionTask = nil
 
-                self.isReocrd = true
+                //self.recordButton.isEnabled = true
+                //self.recordButton.setTitle("Start Recording", for: [])
             }
         }
 
@@ -106,28 +121,37 @@ class SpeechInput: UIViewController, SFSpeechRecognizerDelegate  {
         
         audioEngine.prepare()
         try audioEngine.start()
+        
+        // Let the user know to start talking.
+        //textView.text = "(Go ahead, I'm listening)"
     }
     
     // MARK: SFSpeechRecognizerDelegate
+    
     public func speechRecognizer(_ speechRecognizer: SFSpeechRecognizer, availabilityDidChange available: Bool) {
         if available {
-            self.isReocrd = true
+            recordButton.isEnabled = true
+            recordButton.setTitle("Start Recording", for: [])
         } else {
-            self.isReocrd = false
+            recordButton.isEnabled = false
+            recordButton.setTitle("Recognition Not Available", for: .disabled)
         }
     }
-
-    func Begin() {
+    
+    // MARK: Interface Builder actions
+    
+    func recordButtonTapped() {
         if audioEngine.isRunning {
             audioEngine.stop()
             recognitionRequest?.endAudio()
-            self.isReocrd = false
-            print("stopped")
+            recordButton.isEnabled = false
+            recordButton.setTitle("Stopping", for: .disabled)
         } else {
             do {
                 try startRecording()
+                //recordButton.setTitle("Stop Recording", for: [])
             } catch {
-               print("recording not available")
+                //recordButton.setTitle("Recording Not Available", for: [])
             }
         }
     }
