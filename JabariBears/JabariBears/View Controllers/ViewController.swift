@@ -15,6 +15,10 @@ class ViewController: UIViewController {
         let introText = "Welcome there, do you want the smart assistant feature on or off?"
         let speechRecognition = SpeechOutput()
         speechRecognition.say(text: introText)
+        
+        let inSpeech = SpeechInput()
+        inSpeech.Begin()
+        
     }
 
 
