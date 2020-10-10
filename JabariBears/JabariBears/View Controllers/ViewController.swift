@@ -8,7 +8,10 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    let inSpeech = SpeechInput()
+    let speechRecognition = SpeechOutput()
+    
     @IBOutlet weak var searchLabel: UILabel!
     @IBOutlet weak var searchTextInput: UITextField!
     @IBAction func onSearchSubmit(_ sender: Any) {
@@ -17,14 +20,16 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         let introText = "Welcome there, do you want the smart assistant feature on or off?"
-        let speechRecognition = SpeechOutput()
         speechRecognition.say(text: introText)
         
-        let inSpeech = SpeechInput()
-        inSpeech.recordButtonTapped()
+        
+        
         
     }
 
-
+    @IBAction func didTapScreen(_ sender: Any) {
+        self.inSpeech.recordButtonTapped()
+    }
+    
 }
 
