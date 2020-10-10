@@ -70,13 +70,14 @@ open class SpeechKitManager:NSObject {
         }
         
         let audioSession = AVAudioSession.sharedInstance()
-        try audioSession.setCategory(AVAudioSessionCategoryRecord)
-        try audioSession.setMode(AVAudioSessionModeMeasurement)
-        try audioSession.setActive(true, with: .notifyOthersOnDeactivation)
+        try audioSession.setCategory(AVAudioSession.Category.record)
+        try audioSession.setMode(AVAudioSession.Mode.measurement)
+        try audioSession.setActive(true, options: .notifyOthersOnDeactivation)
         
         recognitionBufferRequest = SFSpeechAudioBufferRecognitionRequest()
         
-        guard let inputNode = audioEngine.inputNode else { fatalError("Audio engine has no input node") }
+        let inputNode = audioEngine.inputNode
+       
         guard let recognitionRequest = recognitionBufferRequest else { fatalError("Unable to created a SFSpeechAudioBufferRecognitionRequest object") }
         
         // Configure request so that results are returned before audio recording is finished
@@ -111,7 +112,7 @@ open class SpeechKitManager:NSObject {
     
     open func stop(){
         audioEngine.stop()
-        audioEngine.inputNode?.removeTap(onBus: 0)
+        audioEngine.inputNode.removeTap(onBus: 0)
         
         recognitionBufferRequest = nil
         recognitionTask = nil

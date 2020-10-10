@@ -48,7 +48,6 @@
                     </view>
                     <connections>
                         <outlet property="searchLabel" destination="84A-Vf-kcY" id="yip-8z-uAY"/>
-                        <outlet property="searchSubmitButton" destination="jz7-6c-9iV" id="sYS-91-iLL"/>
                         <outlet property="searchTextInput" destination="5gD-uF-SKE" id="YgM-S4-9w5"/>
                     </connections>
                 </viewController>
