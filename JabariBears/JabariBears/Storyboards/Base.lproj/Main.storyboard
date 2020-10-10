@@ -16,38 +16,49 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Where to?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="84A-Vf-kcY">
-                                <rect key="frame" x="58" y="373" width="101" height="41"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="american airline logo" translatesAutoresizingMaskIntoConstraints="NO" id="jzf-0Q-BB8">
+                                <rect key="frame" x="47" y="307" width="320" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="IncU (18) 1" translatesAutoresizingMaskIntoConstraints="NO" id="VjM-JQ-66P">
+                                <rect key="frame" x="336" y="44" width="58" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The future of travel is not virtual, but it is inclusive!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9vW-pM-skn">
+                                <rect key="frame" x="32" y="361" width="351" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter City" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5gD-uF-SKE">
-                                <rect key="frame" x="58" y="431" width="298" height="34"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Rectangle 275" translatesAutoresizingMaskIntoConstraints="NO" id="ceF-VQ-4bX">
+                                <rect key="frame" x="16" y="435" width="383" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter City" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5gD-uF-SKE">
+                                <rect key="frame" x="64" y="439" width="320" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration" label="ff"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jz7-6c-9iV">
-                                <rect key="frame" x="299" y="431" width="46" height="34"/>
+                                <rect key="frame" x="16" y="439" width="46" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Enter"/>
+                                <state key="normal" image="IncU (17) 1"/>
                                 <connections>
                                     <action selector="onSearchSubmit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Sy-BA-9pl"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.070588235294117646" green="0.13725490196078433" blue="0.1764705882352941" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="OmT-wd-Qcz" appends="YES" id="ukm-Dc-4q0"/>
                         </connections>
                     </view>
                     <connections>
-                        <outlet property="searchLabel" destination="84A-Vf-kcY" id="yip-8z-uAY"/>
                         <outlet property="searchTextInput" destination="5gD-uF-SKE" id="YgM-S4-9w5"/>
                         <segue destination="c82-3Q-wuc" kind="presentation" identifier="cityDetails" modalPresentationStyle="fullScreen" id="Xp9-Am-7wB"/>
                     </connections>
@@ -247,6 +258,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="IncU (17) 1" width="27" height="25"/>
+        <image name="IncU (18) 1" width="58" height="34"/>
+        <image name="Rectangle 275" width="383" height="42"/>
+        <image name="american airline logo" width="320" height="52"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
