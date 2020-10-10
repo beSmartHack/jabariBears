@@ -149,6 +149,10 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Vhk-gy-HKP"/>
                         <color key="backgroundColor" red="0.070588235294117646" green="0.13725490196078433" blue="0.1764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="mgf-9I-RYm" appends="YES" id="k1y-eD-9aW"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="cityDescription" destination="h6B-fA-d6h" id="2mm-QG-P9D"/>
@@ -157,6 +161,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="crK-F9-xfN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="mgf-9I-RYm">
+                    <connections>
+                        <action selector="didTapScreen:" destination="c82-3Q-wuc" id="A5C-oH-qyd"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="792.75362318840587" y="93.75"/>
         </scene>
