@@ -14,6 +14,24 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var searchLabel: UILabel!
     @IBOutlet weak var searchTextInput: UITextField!
+    
+    let city_data = [
+        [
+        "name": "Fort Worth",
+        "image": " ForthWorth",
+        "description": " Fort Worth is the second-largest city in the Dallas. Fort Worth metropolitan area is the fourth-most populous metropolitan area in the United States"],
+        [
+        "name": "Los Angeles",
+        "image": " LosAngeles",
+        "description": " The city of Los Angeles [69] (also known simply as L.A. and nicknamed the 'City of Angels') is the most populous city in California. Located on a broad basin in Southern California. the city is surrounded by vast mountain ranges"
+        ],
+        [
+        "name": "Baltimore",
+        "image": " Baltimore",
+        "description": " Baltimore is the largest city in Maryland and the center of a metropolitan area of 1.5 million people"
+        ]
+    ]
+    
     @IBAction func onSearchSubmit(_ sender: Any) {
     }
     
