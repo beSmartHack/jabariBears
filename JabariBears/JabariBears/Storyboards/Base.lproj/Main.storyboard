@@ -183,10 +183,10 @@
             </objects>
             <point key="canvasLocation" x="786" y="1460"/>
         </scene>
-        <!--View Controller-->
+        <!--Hotel View Controller-->
         <scene sceneID="WkH-GP-XqN">
             <objects>
-                <viewController id="qUB-lp-5Ll" sceneMemberID="viewController">
+                <viewController id="qUB-lp-5Ll" customClass="HotelViewController" customModule="JabariBears" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BZl-L5-epP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -203,7 +203,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="153" id="7rw-ia-EWB">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="153" id="7rw-ia-EWB" customClass="HotelTableViewCell" customModule="JabariBears" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="374" height="153"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7rw-ia-EWB" id="hbf-Zp-zRC">
@@ -237,6 +237,9 @@
                         <viewLayoutGuide key="safeArea" id="IFG-bQ-iFF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="hotelTableView" destination="tnk-fY-Jn7" id="xRv-jN-ADe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5sH-NP-QYW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

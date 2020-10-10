@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		56DEB258253156A600D2F3FA /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DEB257253156A600D2F3FA /* CityViewController.swift */; };
+		56DEB25D2531585200D2F3FA /* HotelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DEB25C2531585200D2F3FA /* HotelViewController.swift */; };
+		56DEB2622531599200D2F3FA /* HotelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DEB2612531599200D2F3FA /* HotelTableViewCell.swift */; };
 		83B5184A25311F65006A907E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B5184925311F65006A907E /* AppDelegate.swift */; };
 		83B5184C25311F65006A907E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B5184B25311F65006A907E /* SceneDelegate.swift */; };
 		83B5184E25311F65006A907E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B5184D25311F65006A907E /* ViewController.swift */; };
@@ -39,6 +41,8 @@
 
 /* Begin PBXFileReference section */
 		56DEB257253156A600D2F3FA /* CityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
+		56DEB25C2531585200D2F3FA /* HotelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelViewController.swift; sourceTree = "<group>"; };
+		56DEB2612531599200D2F3FA /* HotelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelTableViewCell.swift; sourceTree = "<group>"; };
 		83B5184625311F65006A907E /* JabariBears.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JabariBears.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83B5184925311F65006A907E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83B5184B25311F65006A907E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -139,6 +143,8 @@
 			children = (
 				83B5184D25311F65006A907E /* ViewController.swift */,
 				56DEB257253156A600D2F3FA /* CityViewController.swift */,
+				56DEB25C2531585200D2F3FA /* HotelViewController.swift */,
+				56DEB2612531599200D2F3FA /* HotelTableViewCell.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -293,6 +299,8 @@
 			files = (
 				83B5188925312849006A907E /* SpeechOutput.swift in Sources */,
 				83B5184E25311F65006A907E /* ViewController.swift in Sources */,
+				56DEB2622531599200D2F3FA /* HotelTableViewCell.swift in Sources */,
+				56DEB25D2531585200D2F3FA /* HotelViewController.swift in Sources */,
 				83B5184A25311F65006A907E /* AppDelegate.swift in Sources */,
 				83B5184C25311F65006A907E /* SceneDelegate.swift in Sources */,
 				83B5189C25312E18006A907E /* SpeechInput.swift in Sources */,

@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var searchTextInput: UITextField!
     @IBAction func onSearchSubmit(_ sender: Any) {
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
