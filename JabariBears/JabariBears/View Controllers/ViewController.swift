@@ -16,6 +16,8 @@ class ViewController: UIViewController, AVSpeechSynthesizerDelegate, SFSpeechRec
     let synthesizer = AVSpeechSynthesizer()
     var machineText = String()
     var humanText = String()
+    var isSmart = false
+    var city = [String:String]()
     
     var speechKitManager:SpeechKitManager?
     
@@ -47,7 +49,7 @@ class ViewController: UIViewController, AVSpeechSynthesizerDelegate, SFSpeechRec
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         synthesizer.delegate = self
-        recordButtonTapped()
+        
         print("luck")
         //appStart()
     }
@@ -111,6 +113,7 @@ class ViewController: UIViewController, AVSpeechSynthesizerDelegate, SFSpeechRec
                 // Update the text view with the results
                 isFinal = result.isFinal
                 print("Text \(result.bestTranscription.formattedString)")
+                self.humanText = result.bestTranscription.formattedString
             }
             
             if error != nil || isFinal {
@@ -157,6 +160,7 @@ class ViewController: UIViewController, AVSpeechSynthesizerDelegate, SFSpeechRec
     
     func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didFinish utterance: AVSpeechUtterance) {
         print("me")
+        isSmart = true
         print("yes")
     }
     
@@ -168,6 +172,10 @@ class ViewController: UIViewController, AVSpeechSynthesizerDelegate, SFSpeechRec
         synthesizer.speak(utterance)
     }
     
+    func preProcess(text: String){
+        city = self.city_data[text]!
+        self.performSegue(withIdentifier: "cityDetails", sender: self)
+    }
     
     @IBAction func onSearchSubmit(_ sender: Any) {
         self.performSegue(withIdentifier: "cityDetails", sender: self)
@@ -175,6 +183,14 @@ class ViewController: UIViewController, AVSpeechSynthesizerDelegate, SFSpeechRec
     
 
     @IBAction func didTapScreen(_ sender: Any) {
+        if isSmart{
+            recordButtonTapped()
+        }
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        var cityViewController = segue.destination as! CityViewController
         
     }
     

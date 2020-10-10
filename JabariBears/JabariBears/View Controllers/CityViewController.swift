@@ -8,6 +8,10 @@
 import UIKit
 
 class CityViewController: UIViewController {
+    
+    var isSmart: Bool!
+    var cityData: [String:String]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
