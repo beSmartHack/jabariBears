@@ -33,6 +33,7 @@ class ViewController: UIViewController {
     ]
     
     @IBAction func onSearchSubmit(_ sender: Any) {
+        self.performSegue(withIdentifier: "cityDetails", sender: self)
     }
     
     override func viewDidLoad() {
