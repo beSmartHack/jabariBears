@@ -9,6 +9,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var searchLabel: UILabel!
+    @IBOutlet weak var searchTextInput: UITextField!
+    @IBOutlet weak var searchSubmitButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
