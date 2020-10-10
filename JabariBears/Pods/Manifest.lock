@@ -1,0 +1,20 @@
+PODS:
+  - OSSSpeechKit (0.3.2)
+  - SpeechKitManager (0.1.7)
+
+DEPENDENCIES:
+  - OSSSpeechKit
+  - SpeechKitManager
+
+SPEC REPOS:
+  trunk:
+    - OSSSpeechKit
+    - SpeechKitManager
+
+SPEC CHECKSUMS:
+  OSSSpeechKit: d16c1a0b7d25ed23c7d05397ea168037d701e3fc
+  SpeechKitManager: 9c48ac1fc64e6d76a4a08b05678220f1b701703d
+
+PODFILE CHECKSUM: f17c3b6d02473c6e69b8b59e4b272b231add206b
+
+COCOAPODS: 1.9.3
