@@ -158,6 +158,7 @@
                         <outlet property="cityDescription" destination="h6B-fA-d6h" id="2mm-QG-P9D"/>
                         <outlet property="cityImage" destination="kJi-IE-LA3" id="3Nf-Vp-TOW"/>
                         <outlet property="cityName" destination="cJz-db-yC9" id="k2S-5h-Mfx"/>
+                        <segue destination="qUB-lp-5Ll" kind="presentation" identifier="hotels" modalPresentationStyle="fullScreen" id="uzS-7g-EiM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="crK-F9-xfN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -272,6 +273,7 @@
                         <viewLayoutGuide key="safeArea" id="IFG-bQ-iFF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="kOo-7v-px2"/>
                     <connections>
                         <outlet property="hotelTableView" destination="tnk-fY-Jn7" id="xRv-jN-ADe"/>
                     </connections>

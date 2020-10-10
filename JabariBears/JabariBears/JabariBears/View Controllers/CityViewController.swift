@@ -11,7 +11,7 @@ import SpeechKitManager
 import Speech
 
 
-class CityViewController: UIViewController, SFSpeechRecognizerDelegate {
+class CityViewController: UIViewController, SFSpeechRecognizerDelegate, AVSpeechSynthesizerDelegate {
     
     var isSmart: Bool!
     var cityData: [String:String]!
@@ -33,6 +33,7 @@ class CityViewController: UIViewController, SFSpeechRecognizerDelegate {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        synthesizer.delegate = self
         populateView()
         sayTexts()
     }
@@ -127,7 +128,7 @@ class CityViewController: UIViewController, SFSpeechRecognizerDelegate {
             if audioEngine.isRunning {
                 audioEngine.stop()
                 print(humanText + "!!!!!")
-               
+                
                 recognitionRequest?.endAudio()
             } else {
                 do {
@@ -136,6 +137,13 @@ class CityViewController: UIViewController, SFSpeechRecognizerDelegate {
                    print("error")
                 }
             }
+    }
+    
+    func preProcess(text: String){
+        if (text.lowercased().contains("one")){
+            self.performSegue(withIdentifier: "hotels", sender: nil)
+        }
+        humanText = ""
     }
     
     func populateView() {
@@ -161,25 +169,29 @@ class CityViewController: UIViewController, SFSpeechRecognizerDelegate {
         say(text: "say 3 to seatch flights")
     }
     
-    @IBAction func didTapScreen(_ sender: Any) {
+    func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didFinish utterance: AVSpeechUtterance) {
+        isSmart = true
     }
+    
+    @IBAction func didTapScreen(_ sender: Any) {
+        if isSmart{
+            recordButtonTapped()
+        }
+    }
+    
     @IBAction func goToActivites(_ sender: Any) {
     }
+    
     @IBAction func goToHotels(_ sender: Any) {
+        self.performSegue(withIdentifier: "hotels", sender: nil)
     }
+    
     @IBAction func goToFlights(_ sender: Any) {
     }
     
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        let hotelViewController = segue.destination as! HotelViewController
+        hotelViewController.cityName = self.cityData["name"]!
     }
-    */
-
+    
 }
