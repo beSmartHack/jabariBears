@@ -6,11 +6,19 @@
 //
 
 import UIKit
+import AVFoundation
+import SpeechKitManager
+import Speech
+
 
 class CityViewController: UIViewController {
     
     var isSmart: Bool!
     var cityData: [String:String]!
+    let speechRecognition = SpeechInput()
+    let synthesizer = AVSpeechSynthesizer()
+    var machineText = String()
+    var humanText = String()
     
     @IBOutlet weak var cityImage: UIImageView!
     @IBOutlet weak var cityName: UILabel!
@@ -21,6 +29,7 @@ class CityViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         populateView()
+        sayTexts()
     }
     
     func populateView() {
@@ -28,6 +37,19 @@ class CityViewController: UIViewController {
         let image = UIImage(named: self.cityData["image"]!)
         self.cityImage.image = image
         self.cityDescription.text = self.cityData["description"]
+    }
+    
+    func say(text: String){
+        let utterance = AVSpeechUtterance(string: text)
+        utterance.voice = AVSpeechSynthesisVoice(language: "en-ZA")
+        utterance.rate = 0.545
+
+        synthesizer.speak(utterance)
+    }
+    
+    func sayTexts(){
+        say(text: self.cityData["name"]!)
+        say(text: self.cityData["description"]!)
     }
     
     @IBAction func goToActivites(_ sender: Any) {

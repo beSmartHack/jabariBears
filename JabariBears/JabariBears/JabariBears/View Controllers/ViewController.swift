@@ -38,7 +38,7 @@ class ViewController: UIViewController, AVSpeechSynthesizerDelegate, SFSpeechRec
         "Los Angeles": [
                     "name": "Los Angeles",
                     "image": "LosAngeles",
-                    "description": "The city of Los Angeles [69] (also known simply as L.A. and nicknamed the 'City of Angels') is the most populous city in California. Located on a broad basin in Southern California. the city is surrounded by vast mountain ranges"],
+                    "description": "The city of Los Angeles is the most populous city in California. Located on a broad basin in Southern California. the city is surrounded by vast mountain ranges"],
         "Baltimore": [
                     "name": "Baltimore",
                     "image": "Baltimore",
@@ -178,7 +178,7 @@ class ViewController: UIViewController, AVSpeechSynthesizerDelegate, SFSpeechRec
         if (text.lowercased().contains("off")) {
             isSmart = false
         } else if (text.lowercased().contains("on")){
-            say(text: "What city would you lke to go to?")
+            say(text: "What city would you like to go to?")
         } else if (self.city_data[text] != nil) {
             city = self.city_data[text]!
             self.performSegue(withIdentifier: "cityDetails", sender: self)
