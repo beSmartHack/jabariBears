@@ -11,7 +11,7 @@ class HotelTableViewCell: UITableViewCell {
 
     
     @IBOutlet weak var hotelName: UILabel!
-
+    @IBOutlet weak var hotelImage: UIImageView!
     @IBOutlet weak var numberOfCases: UILabel!
     @IBOutlet weak var hotelAddress: UILabel!
     

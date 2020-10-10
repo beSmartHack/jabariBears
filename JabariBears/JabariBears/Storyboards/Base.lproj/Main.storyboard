@@ -263,6 +263,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="hotelAddress" destination="LYy-p4-Vx5" id="eDV-Vl-H2I"/>
+                                            <outlet property="hotelImage" destination="qFg-6k-WzX" id="PQf-g8-0Of"/>
                                             <outlet property="hotelName" destination="I0U-91-tdr" id="5SS-bY-zcL"/>
                                             <outlet property="numberOfCases" destination="RI1-NO-hG8" id="DA4-ds-2q3"/>
                                         </connections>
@@ -276,6 +277,7 @@
                     <navigationItem key="navigationItem" id="kOo-7v-px2"/>
                     <connections>
                         <outlet property="hotelTableView" destination="tnk-fY-Jn7" id="xRv-jN-ADe"/>
+                        <outlet property="tableView" destination="tnk-fY-Jn7" id="kgL-Nh-WJ2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5sH-NP-QYW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
