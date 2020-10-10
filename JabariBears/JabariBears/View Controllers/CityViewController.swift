@@ -36,6 +36,7 @@ class CityViewController: UIViewController, SFSpeechRecognizerDelegate, AVSpeech
         synthesizer.delegate = self
         populateView()
         sayTexts()
+        getJsonData()
     }
     
     override public func viewDidAppear(_ animated: Bool) {
@@ -159,6 +160,23 @@ class CityViewController: UIViewController, SFSpeechRecognizerDelegate, AVSpeech
         utterance.rate = 0.545
 
         synthesizer.speak(utterance)
+    }
+    
+    func getJsonData() {
+        if let path = Bundle.main.path(forResource: "teradata", ofType: "json")
+        {
+            do {
+                      let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+                      let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
+                      if let jsonResult = jsonResult as? Dictionary<String, AnyObject>,
+                         let baltimore = jsonResult["baltimore"] as? [Any] {
+                                print(jsonResult)
+                      }
+                  } catch {
+                       // handle error
+                    print("not working")
+                  }
+    }
     }
     
     func sayTexts(){
