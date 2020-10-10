@@ -12,15 +12,24 @@ class CityViewController: UIViewController {
     var isSmart: Bool!
     var cityData: [String:String]!
     
+    @IBOutlet weak var cityImage: UIImageView!
+    @IBOutlet weak var cityName: UILabel!
+    @IBOutlet weak var cityDescription: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        populateView()
     }
     
-    @IBOutlet weak var cityImage: UIImageView!
-    @IBOutlet weak var cityName: UILabel!
-    @IBOutlet weak var cityDescription: UILabel!
+    func populateView() {
+        self.cityName.text = self.cityData["name"]!
+        let image = UIImage(named: self.cityData["image"]!)
+        self.cityImage.image = image
+        self.cityDescription.text = self.cityData["description"]
+    }
+    
     @IBAction func goToActivites(_ sender: Any) {
     }
     @IBAction func goToHotels(_ sender: Any) {
